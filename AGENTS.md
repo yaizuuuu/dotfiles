@@ -1,1 +1,3 @@
-/Users/yaizuuuu/Projects/ghq/github.com/yaizuuuu/dotfiles/CLAUDE.md
+# AGENTS.md
+
+CLAUDE.mdを参照。
