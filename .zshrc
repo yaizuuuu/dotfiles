@@ -3,6 +3,7 @@
 
 # envs
 export PATH="${HOME}/.local/bin:$PATH"
+export AWS_VAULT_KEYCHAIN_NAME="login"
 
 # customize
 eval "$(starship init zsh)"
