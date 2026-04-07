@@ -69,7 +69,7 @@ info "creating links"
 ln -sf  $DOTFILES_DIR/.zshrc ~/.zshrc
 ln -sf  $DOTFILES_DIR/.Brewfile ~/.Brewfile
 ln -sf  $DOTFILES_DIR/.gitconfig ~/.gitconfig
-ln -sf  $DOTFILES_DIR/.git-templates ~/.git-templates
+ln -sf  $DOTFILES_DIR/.git-templates ~/
 
 mkdir -p ~/.config/ghostty
 mkdir -p ~/.config/git
