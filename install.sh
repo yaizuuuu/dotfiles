@@ -69,6 +69,7 @@ info "creating links"
 ln -sf  $DOTFILES_DIR/.zshrc ~/.zshrc
 ln -sf  $DOTFILES_DIR/.Brewfile ~/.Brewfile
 ln -sf  $DOTFILES_DIR/.gitconfig ~/.gitconfig
+ln -sf  $DOTFILES_DIR/.git-templates ~/.git-templates
 
 mkdir -p ~/.config/ghostty
 mkdir -p ~/.config/git
@@ -84,6 +85,11 @@ ln -sf  $DOTFILES_DIR/.claude/CLAUDE.md ~/.codex/AGENTS.md
 ln -sf  $DOTFILES_DIR/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf  $DOTFILES_DIR/.claude/notify.sh ~/.claude/notify.sh
 ln -sf  $DOTFILES_DIR/.claude/settings.json ~/.claude/settings.json
+
+
+info "installing lefthook"
+
+(cd "$DOTFILES_DIR" && lefthook install)
 
 
 info "installing safe-chain"

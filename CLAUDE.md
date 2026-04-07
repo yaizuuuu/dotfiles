@@ -27,6 +27,7 @@ bash install.sh
 | `.config/starship.toml` | `~/.config/starship.toml` |
 | `.config/ghostty/config` | `~/.config/ghostty/config` |
 | `.config/git/ignore` | `~/.config/git/ignore` |
+| `.git-templates` | `~/.git-templates` |
 | `.claude/CLAUDE.md` | `~/.claude/CLAUDE.md` / `~/.codex/AGENTS.md` |
 | `.claude/notify.sh` | `~/.claude/notify.sh` |
 | `.claude/settings.json` | `~/.claude/settings.json` |
