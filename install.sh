@@ -80,8 +80,8 @@ ln -sf  $DOTFILES_DIR/.config/git/ignore ~/.config/git/ignore
 mkdir -p ~/.claude
 mkdir -p ~/.codex
 
-ln -sf  $DOTFILES_DIR/AGENTS.md ~/.codex/AGENTS.md
-ln -sf  $DOTFILES_DIR/AGENTS.md ~/.claude/CLAUDE.md
+ln -sf  $DOTFILES_DIR/.claude/CLAUDE.md ~/.codex/AGENTS.md
+ln -sf  $DOTFILES_DIR/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf  $DOTFILES_DIR/.claude/notify.sh ~/.claude/notify.sh
 ln -sf  $DOTFILES_DIR/.claude/settings.json ~/.claude/settings.json
 
