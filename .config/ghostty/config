@@ -1,0 +1,16 @@
+theme = Material Design Colors
+# theme = 0x96f
+
+font-family = HackGen Console NF Regular
+
+window-width = 222
+window-height = 58
+macos-titlebar-style = tabs
+font-size = 13.5
+window-padding-x = 5
+
+# 選択しただけでクリップボードにコピー
+copy-on-select = clipboard
+# クリップボードの読み書きを許可
+clipboard-read = allow
+clipboard-write = allow
