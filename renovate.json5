@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "versioning": "git-tags"
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/secret-scan\\.yml$"],
+      "matchStrings": [
+        "git -C /tmp/git-secrets fetch --depth 1 origin (?<currentValue>[a-f0-9]{40})"
+      ],
+      "datasourceTemplate": "git-tags",
+      "depNameTemplate": "awslabs/git-secrets"
+    }
+  ]
+}
