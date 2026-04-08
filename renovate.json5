@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "versioning": "git-tags"
+      "pinDigests": true
     }
   ],
   "regexManagers": [
