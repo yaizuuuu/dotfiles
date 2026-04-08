@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "gitAuthor": "yaizuuuu <yaizuuuu@users.noreply.github.com>",
+  "gitAuthor": "yaizuuuu <y24151739+yaizuuuu@users.noreply.github.com>",
   "packageRules": [
     {
       "matchManagers": ["github-actions"]
