@@ -1,10 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "gitAuthor": "yaizuuuu <y24151739+yaizuuuu@users.noreply.github.com>",
   "packageRules": [
     {
-      "matchManagers": ["github-actions"]
+      "matchManagers": ["github-actions"],
+      "pinDigests": true
+
     }
   ],
   "regexManagers": [
