@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": false,
+  "timezone": "Asia/Tokyo",
+  "extends": [
+    "config:best-practices",
+    ":disableRateLimiting"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/secret-scan\\.yml$"],
+      "matchStrings": [
+        "TARGET_HASH: (?<currentDigest>.*) # (?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "awslabs/git-secrets"
+    }
+  ]
+}
