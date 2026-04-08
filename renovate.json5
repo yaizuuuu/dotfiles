@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "gitAuthor": "yaizuuuu <yaizuuuu@users.noreply.github.com>",
   "packageRules": [
     {
-      "matchManagers": ["github-actions"],
-      "pinDigests": true
+      "matchManagers": ["github-actions"]
     }
   ],
   "regexManagers": [
@@ -13,7 +13,7 @@
       "matchStrings": [
         "git -C /tmp/git-secrets fetch --depth 1 origin (?<currentValue>[a-f0-9]{40})"
       ],
-      "datasourceTemplate": "git-tags",
+      "datasourceTemplate": "github-tags",
       "depNameTemplate": "awslabs/git-secrets"
     }
   ]
