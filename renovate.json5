@@ -1,12 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "packageRules": [
-    {
-      "matchManagers": ["github-actions"],
-      "pinDigests": true
-
-    }
+  "automerge": false,
+  "timezone": "Asia/Tokyo",
+  "gitAuthor": "yaizuuuu <24151739+yaizuuuu@users.noreply.github.com>",
+  "extends": [
+    "config:best-practices",
+    ":disableRateLimiting"
   ],
   "regexManagers": [
     {
