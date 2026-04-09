@@ -1,20 +1,23 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": false,
-  "timezone": "Asia/Tokyo",
-  "gitAuthor": "yaizuuuu <24151739+yaizuuuu@users.noreply.github.com>",
-  "extends": [
-    "config:best-practices",
-    ":disableRateLimiting"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  automerge: false,
+  timezone: 'Asia/Tokyo',
+  gitAuthor: 'yaizuuuu <24151739+yaizuuuu@users.noreply.github.com>',
+  extends: [
+    'config:best-practices',
+    ':disableRateLimiting',
   ],
-  "regexManagers": [
+  customManagers: [
     {
-      "fileMatch": ["^\\.github/workflows/secret-scan\\.yml$"],
-      "matchStrings": [
-        "git -C /tmp/git-secrets fetch --depth 1 origin (?<currentValue>[a-f0-9]{40})"
+      customType: 'regex',
+      managerFilePatterns: [
+        '/^\\.github/workflows/secret-scan\\.yml$/',
       ],
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "awslabs/git-secrets"
-    }
-  ]
+      matchStrings: [
+        'git -C /tmp/git-secrets fetch --depth 1 origin (?<currentValue>[a-f0-9]{40})',
+      ],
+      datasourceTemplate: 'github-tags',
+      depNameTemplate: 'awslabs/git-secrets',
+    },
+  ],
 }
