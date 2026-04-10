@@ -2,6 +2,8 @@ name: actions-lints
 
 on:
   pull_request:
+    paths:
+      - ".github/workflows/*.yml"
 
 permissions: {}
 
