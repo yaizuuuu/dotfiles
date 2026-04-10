@@ -3,9 +3,16 @@ name: actions-lints
 on:
   pull_request:
 
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   actionlint:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    name: actionlint
     timeout-minutes: 30
     permissions:
       contents: read
@@ -16,7 +23,8 @@ jobs:
       - uses: raven-actions/actionlint@205b530c5d9fa8f44ae9ed59f341a0db994aa6f8 # v2.1.2
 
   ghalint:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    name: ghalint
     timeout-minutes: 30
     permissions:
       contents: read
@@ -35,7 +43,8 @@ jobs:
         run: ghalint run
 
   zizmor:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    name: zizmor
     timeout-minutes: 30
     permissions:
       contents: read

@@ -5,3 +5,6 @@ pre-commit:
   jobs:
     - run: git secrets --pre_commit_hook
     - run: gitleaks protect --staged -v
+    - run: ghalint run
+    - run: actionlint
+    - run: zizmor -p .
