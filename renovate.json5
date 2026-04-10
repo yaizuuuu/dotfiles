@@ -15,5 +15,11 @@
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "awslabs/git-secrets"
     }
+  ],
+    "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "minimumReleaseAge": "14 days"
+    }
   ]
 }
