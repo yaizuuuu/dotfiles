@@ -7,7 +7,6 @@
 
 TYPE="${1:-Notification}"
 MESSAGE="${2:-作業が完了しました}"
-NOTIFY_SENDER="${CC_NOTIFY_SENDER:-com.apple.Terminal}"
 
 # 通知タイプに応じたサウンドとタイトル
 case "$TYPE" in
@@ -29,4 +28,4 @@ terminal-notifier \
   -title "$TITLE" \
   -message "$MESSAGE" \
   -sound "$SOUND" \
-  -sender "$NOTIFY_SENDER"
+  -execute 'open -a Ghostty'
