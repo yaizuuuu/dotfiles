@@ -22,7 +22,15 @@
       ],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "suzuki-shunsuke/ghalint"
-    }
+    },
+    {
+      "fileMatch": ["^install\\.sh$"],
+      "matchStrings": [
+        "SAFE_CHAIN_VER=\"(?<currentValue>.*)\""
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "AikidoSec/safe-chain"
+    },
   ],
     "packageRules": [
     {

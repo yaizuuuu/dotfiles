@@ -94,4 +94,5 @@ info "installing lefthook"
 
 info "installing safe-chain"
 
-curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh
+SAFE_CHAIN_VER="1.4.7"
+curl -fsSL "https://github.com/AikidoSec/safe-chain/releases/download/${SAFE_CHAIN_VER}/install-safe-chain.sh" | sh
