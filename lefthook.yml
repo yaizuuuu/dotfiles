@@ -8,3 +8,8 @@ pre-commit:
     - run: ghalint run
     - run: actionlint
     - run: zizmor -p .
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit "$1"

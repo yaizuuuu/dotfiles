@@ -37,6 +37,15 @@ curl -fsSL https://raw.githubusercontent.com/yaizuuuu/dotfiles/HEAD/install.sh |
 | `.claude/notify.sh` | `~/.claude/notify.sh` |
 | `.claude/settings.json` | `~/.claude/settings.json` |
 
+## 開発セットアップ
+
+リポジトリをクローン後、初回のみ以下を実行してください:
+
+```bash
+npm install
+npx lefthook install
+```
+
 ## 注意
 
 - `install.sh` は `gh auth login` が済んでいない場合ログインを促します（ghqでリポジトリをcloneするために必要）
