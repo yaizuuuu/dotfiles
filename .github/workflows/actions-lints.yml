@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   actions-lints:
-    name: actionlint
+    name: actions-lints
     permissions:
       contents: read
-    uses: yaizuuuu/shared-workflows/.github/workflows/actions-lints.yml@dea1147981b5158dd5642b7cf9b4c78b4f91fea0 # v0.0.2
+    uses: yaizuuuu/shared-workflows/.github/workflows/actions-lints.yml@da337b2d304e185cababd14ff615135bb645a4ed # v0.0.3
