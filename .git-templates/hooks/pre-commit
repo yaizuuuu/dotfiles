@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 git secrets --pre_commit_hook -- "$@"
 gitleaks protect --staged -v
+ghalint run
+actionlint
+zizmor -p .
