@@ -10,6 +10,5 @@ pre-commit:
     - run: zizmor -p .
 
 commit-msg:
-  commands:
-    commitlint:
-      run: npx commitlint --edit "$1"
+  jobs:
+    - run: npx --no -- commitlint --edit "$1"
