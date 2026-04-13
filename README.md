@@ -41,3 +41,11 @@ curl -fsSL https://raw.githubusercontent.com/yaizuuuu/dotfiles/HEAD/install.sh |
 
 - `install.sh` は `gh auth login` が済んでいない場合ログインを促します（ghqでリポジトリをcloneするために必要）
 - Google 日本語入力の更新後は、端末の再起動が必要になることがあります
+
+## 開発セットアップ
+
+リポジトリをクローン後、以下を実行してください:
+
+```bash
+npm install
+```
