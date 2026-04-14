@@ -1,28 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": false,
-  "timezone": "Asia/Tokyo",
-  "extends": [
-    "config:best-practices",
-    ":disableRateLimiting"
-  ],
+  "extends": ["github>yaizuuuu/my-renovate-config"],
   "regexManagers": [
-    {
-      "fileMatch": ["^\\.github/workflows/secret-scan\\.yml$"],
-      "matchStrings": [
-        "TARGET_HASH: (?<currentDigest>.*) # (?<currentValue>.*)"
-      ],
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "awslabs/git-secrets"
-    },
-    {
-      "fileMatch": ["^\\.github/workflows/actions-lints\\.yml$"],
-      "matchStrings": [
-        "GHALINT_VERSION: (?<currentValue>.*)"
-      ],
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "suzuki-shunsuke/ghalint"
-    },
     {
       "fileMatch": ["^install\\.sh$"],
       "matchStrings": [
@@ -31,11 +10,5 @@
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "AikidoSec/safe-chain"
     },
-  ],
-    "packageRules": [
-    {
-      "matchPackageNames": ["*"],
-      "minimumReleaseAge": "14 days"
-    }
   ]
 }
