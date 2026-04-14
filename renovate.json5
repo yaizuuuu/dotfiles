@@ -1,14 +1,19 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>yaizuuuu/my-renovate-config"],
-  "regexManagers": [
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'github>yaizuuuu/my-renovate-config',
+  ],
+  customManagers: [
     {
-      "fileMatch": ["^install\\.sh$"],
-      "matchStrings": [
-        "SAFE_CHAIN_VER=\"(?<currentValue>.*)\""
+      customType: 'regex',
+      managerFilePatterns: [
+        '/^install\\.sh$/',
       ],
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "AikidoSec/safe-chain"
+      matchStrings: [
+        'SAFE_CHAIN_VER="(?<currentValue>.*)"',
+      ],
+      datasourceTemplate: 'github-tags',
+      depNameTemplate: 'AikidoSec/safe-chain',
     },
-  ]
+  ],
 }
