@@ -95,5 +95,5 @@ info "installing lefthook"
 info "installing safe-chain"
 
 # renovate: datasource=github-releases packageName=AikidoSec/safe-chain
-SAFE_CHAIN_VERSION="1.4.7"
+SAFE_CHAIN_VERSION="1.4.9"
 curl -fsSL "https://github.com/AikidoSec/safe-chain/releases/download/${SAFE_CHAIN_VERSION}/install-safe-chain.sh" | sh
