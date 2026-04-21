@@ -8,6 +8,15 @@ function gcl() {
   git branch | grep -v '*' | xargs git branch -D
 }
 
+function gsw() {
+  if [[ -z "$1" ]]; then
+    git switch $(git branch | grep -v '*' | sed -e 's/^[ ]*//' | fzf)
+    return 0
+  fi
+
+  git switch "$@"
+}
+
 function aws() {
   if [[ "$1" == "sso" && "$2" == "login" ]]; then
     echo "🆖 aws sso login は禁止されています 🙅" >&2
